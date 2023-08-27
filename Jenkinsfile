@@ -24,7 +24,7 @@ pipeline {
         stage('Building image') {
             steps {
                 script {
-                    dockerImage = docker.build "${jenkins-docker-hub}:${latest}"
+                    dockerImage = docker.build "${jenkins-dockers-hub}:${latest}"
                 }
             }
         }
