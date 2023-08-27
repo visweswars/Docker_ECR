@@ -5,7 +5,7 @@ pipeline {
         AWS_DEFAULT_REGION="us-east-1"
         IMAGE_REPO_NAME="jenkins-ecr"
         IMAGE_TAG="latest"
-        REPOSITORY_URI = "$ 890936820974.dkr.ecr.us-east-1.amazonaws.com/jenkins-ecr"
+        REPOSITORY_URI = "$890936820974.dkr.ecr.us-east-1.amazonaws.com/jenkins-ecr"
     }
     stages {
         stage('Logging into AWS ECR') {
