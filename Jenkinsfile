@@ -15,11 +15,6 @@ pipeline {
                 }
             }
         }
-        stage('Cloning Git') {
-            steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'visweswars.dev@gmail.com', url: 'https://github.com/sd031/aws_codebuild_codedeploy_nodeJs_demo.git']]])
-            }
-        }
         // Building Docker images
         stage('Building image') {
             steps {
